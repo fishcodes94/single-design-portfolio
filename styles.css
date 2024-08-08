@@ -1,0 +1,564 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+#container {
+  display: flex;
+  flex-direction: column;
+  background-color: #fef9e7;
+  height: auto;
+  text-align: center;
+  align-items: center;
+}
+
+#nav-area {
+  display: flex;
+  justify-content: space-around;
+  margin: 1em;
+  gap: 35em;
+}
+
+header {
+  font-size: 0.8em;
+}
+header h1 {
+  margin-bottom: 0.4em;
+}
+
+header p {
+  margin-left: 5em;
+  margin-right: 5em;
+  text-align: center;
+  margin-bottom: 3em;
+}
+
+nav button {
+  width: 34em;
+  height: 8em;
+  border: none;
+  font-size: 0.2em;
+  border-radius: 20px;
+  color: white;
+  background-color: black;
+}
+
+#expertice-section {
+  display: grid;
+  grid-template-columns: 100px 100px 100px 100px 100px 100px;
+  grid-template-rows: 100px 100px 100px 100px;
+  gap: 0.8em;
+  color: white;
+}
+
+#expertice-section span {
+  border-radius: 5px;
+}
+
+#graphic-design {
+  background-image: url("./assets/graphic-design-pic.png");
+  background-size: contain;
+  padding: 1em;
+  grid-column: span 2;
+  grid-row: span 2;
+}
+
+#ui-ux {
+  background-image: url("./assets/ui:ux-pic.png");
+  background-size: contain;
+  padding: 1em;
+}
+
+#apps {
+  background-image: url("./assets/apps-design-pic.png");
+  background-size: contain;
+  padding: 1em;
+}
+
+#photography {
+  background-image: url("./assets/photography-pic.png");
+  background-size: contain;
+  padding: 1em;
+  grid-column: span 2;
+}
+
+#illustrations {
+  background-image: url("./assets/Illustrations-pic.png");
+  background-size: contain;
+  padding: 1em;
+  grid-column: span 2;
+}
+#motion-graphics {
+  background-image: url("./assets/motion\ graphics-pic.png");
+  background-size: contain;
+  padding: 1em;
+  grid-column: span 2;
+}
+
+.skill-span {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+}
+
+#image-container img {
+  width: 13em;
+}
+
+#designer-bio {
+  display: flex;
+  align-items: center;
+  margin-top: -10em;
+  margin-bottom: 4em;
+}
+
+#about-me-container {
+  margin: 3.2em;
+  width: 22em;
+  text-align: left;
+}
+
+#about-me-container h2 {
+  margin-bottom: 1em;
+}
+
+#about-me-container p {
+  margin-bottom: 1em;
+}
+
+#about-me-container button {
+  width: 10em;
+  height: 3em;
+  border: none;
+  font-size: 0.9em;
+  border-radius: 20px;
+  color: white;
+  background-color: #f5b041;
+  cursor: pointer;
+}
+
+#my-work-title {
+  margin-bottom: 1em;
+}
+
+#slider-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 8em;
+  overflow: hidden;
+  width: 80%;
+}
+
+.slider {
+  position: relative;
+  overflow: hidden;
+
+  max-width: 600px;
+}
+
+.slides-item {
+  min-width: 50%;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.slides img {
+  width: 100%;
+  display: block;
+  height: 25em;
+
+  border-radius: 10px;
+}
+
+.slides {
+  display: flex;
+  gap: 0.5em;
+}
+#navigation {
+  margin-top: 1em;
+}
+
+#navigation button {
+  border: none;
+  background-color: transparent;
+  font-size: 2em;
+  cursor: pointer;
+}
+
+.black-square {
+  font-size: 1.5em;
+}
+
+#communication-container {
+  background-color: black;
+  width: 40em;
+  height: 10em;
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 2em;
+  border-radius: 10px;
+  margin-top: -4em;
+}
+
+#communication-container button {
+  width: 10em;
+  height: 3em;
+  border: none;
+  font-size: 0.9em;
+  border-radius: 20px;
+  color: white;
+  background-color: #f5b041;
+  cursor: pointer;
+}
+
+#communication-info {
+  width: 50%;
+  margin: 3em;
+  text-align: left;
+}
+
+#communication-container h2 {
+  margin-bottom: 0.5em;
+}
+
+#communication-container p {
+  font-size: 0.8em;
+}
+
+#footer-area {
+  display: flex;
+  justify-content: space-around;
+  margin: 1em;
+  gap: 35em;
+  margin-top: 3em;
+  margin-bottom: 3em;
+}
+
+#footer-area button {
+  width: 34em;
+  height: 8em;
+  border: none;
+  font-size: 0.2em;
+  border-radius: 20px;
+  color: white;
+  background-color: black;
+}
+
+@media only screen and (min-width: 977px) {
+  nav button {
+    width: 10em;
+    height: 2em;
+    border: none;
+    font-size: 20px;
+    border-radius: 20px;
+    color: white;
+    background-color: black;
+  }
+
+  #nav-area {
+    display: flex;
+    justify-content: space-around;
+    margin: 1em;
+    gap: 60em;
+    align-items: center;
+    margin-bottom: 8em;
+  }
+
+  header {
+    font-size: 2em;
+  }
+
+  .black-square {
+    font-size: 4em;
+  }
+
+  header h1 {
+    margin-bottom: 0.4em;
+  }
+
+  header p {
+    margin-left: 5em;
+    margin-right: 5em;
+    text-align: center;
+    margin-bottom: 3em;
+  }
+
+  #expertice-section {
+    display: grid;
+    grid-template-columns: 200px 200px 200px 200px 200px 200px;
+    grid-template-rows: 200px 200px 200px 200px;
+    gap: 0.8em;
+    color: white;
+  }
+
+  #image-container img {
+    width: 23em;
+  }
+
+  #designer-bio {
+    display: flex;
+    align-items: center;
+    margin-top: -20em;
+    margin-bottom: 4em;
+  }
+
+  #about-me-container {
+    margin: 3.2em;
+    width: 22em;
+    text-align: left;
+    font-size: 1.5em;
+  }
+
+  #about-me-container h2 {
+    margin-bottom: 1em;
+  }
+
+  #about-me-container p {
+    margin-bottom: 1em;
+  }
+
+  #about-me-container button {
+    width: 10em;
+    height: 3em;
+    border: none;
+    font-size: 0.9em;
+    border-radius: 20px;
+    color: white;
+    background-color: #f5b041;
+    cursor: pointer;
+  }
+
+  #slider-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 8em;
+    overflow: hidden;
+    width: 80%;
+  }
+
+  .slider {
+    position: relative;
+    overflow: hidden;
+
+    max-width: 75em;
+  }
+
+  .slides-item {
+    min-width: 30%;
+    transition: opacity 0.5s ease-in-out;
+  }
+
+  .slides img {
+    width: 100%;
+    display: block;
+    height: 25em;
+
+    border-radius: 10px;
+  }
+
+  .slides {
+    display: flex;
+    gap: 0.5em;
+  }
+
+  #communication-container {
+    background-color: black;
+    width: 60em;
+    height: 20em;
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 2em;
+    border-radius: 10px;
+    margin-top: -4em;
+    font-size: 1.2em;
+  }
+
+  #communication-container button {
+    width: 16em;
+    height: 4em;
+    border: none;
+    font-size: 0.9em;
+    border-radius: 20px;
+    color: white;
+    background-color: #f5b041;
+    cursor: pointer;
+  }
+
+  #communication-info {
+    width: 50%;
+    margin: 3em;
+    text-align: left;
+  }
+
+  #communication-container h2 {
+    margin-bottom: 0.5em;
+  }
+
+  #communication-container p {
+    font-size: 0.8em;
+  }
+
+  #my-work-title {
+    font-size: 3.5em;
+  }
+  #footer-area {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 1em;
+    gap: 60em;
+    margin-top: 3em;
+    margin-bottom: 3em;
+  }
+
+  #footer-area button {
+    width: 10em;
+    height: 2em;
+    border: none;
+    font-size: 20px;
+    border-radius: 20px;
+    color: white;
+    background-color: black;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  #nav-area {
+    display: flex;
+    justify-content: space-around;
+    margin: 1em;
+    gap: 20em;
+  }
+
+  #expertice-section {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8em;
+    color: white;
+  }
+
+  .skill-span {
+    width: 35em;
+    height: 15em;
+  }
+
+  header {
+    font-size: 1.6em;
+    margin-left: 2em;
+    margin-right: 2em;
+    margin-top: 2em;
+  }
+
+  header p {
+    margin-left: 2em;
+    margin-right: 2em;
+    text-align: center;
+    margin-bottom: 3em;
+  }
+
+  #nav-area {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 14em;
+    font-size: 1em;
+  }
+
+  nav button {
+    width: 12em;
+    height: 3em;
+    border: none;
+    font-size: 1.4em;
+    border-radius: 40px;
+    color: white;
+    background-color: black;
+  }
+
+  .black-square {
+    font-size: 4.5em;
+  }
+
+  .skill-span-text {
+    font-size: 2em;
+  }
+
+  #designer-bio {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 10em;
+    margin-bottom: 4em;
+  }
+
+  #image-container img {
+    width: 26em;
+  }
+
+  #about-me-container {
+    margin: 3.2em;
+    width: 22em;
+    text-align: center;
+    font-size: 1.5em;
+  }
+
+  #about-me-container h2 {
+    margin-bottom: 1em;
+  }
+
+  #about-me-container p {
+    margin-bottom: 1em;
+  }
+
+  #slider-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 8em;
+    overflow: hidden;
+    width: 80%;
+  }
+
+  #communication-container {
+    background-color: black;
+    width: 20em;
+    height: 22em;
+    color: white;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    gap: 2em;
+    border-radius: 10px;
+    margin-top: -2em;
+    font-size: 1.9em;
+  }
+
+  #communication-info {
+    width: 50%;
+    margin: 3em;
+    text-align: center;
+  }
+
+  #footer-area {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 1em;
+    gap: 15em;
+    margin-top: 3em;
+    margin-bottom: 3em;
+  }
+
+  #footer-area button {
+    width: 12em;
+    height: 3em;
+    border: none;
+    font-size: 1.4em;
+    border-radius: 40px;
+    color: white;
+    background-color: black;
+  }
+}
